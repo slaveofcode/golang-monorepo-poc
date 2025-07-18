@@ -22,9 +22,10 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/slaveofcode/golang-monorepo-poc/core"
-	"github.com/slaveofcode/golang-monorepo-poc/plugin-a"
-	"github.com/slaveofcode/golang-monorepo-poc/plugin-b"
+	plugina "github.com/slaveofcode/golang-monorepo-poc/plugin-a"
+	pluginb "github.com/slaveofcode/golang-monorepo-poc/plugin-b"
 )
 
 func main() {
@@ -68,7 +69,7 @@ package main
 import (
 	"fmt"
 	"github.com/slaveofcode/golang-monorepo-poc/core"
-	"github.com/slaveofcode/golang-monorepo-poc/core/v2"
+	corev2 "github.com/slaveofcode/golang-monorepo-poc/core/v2"
 	"github.com/slaveofcode/golang-monorepo-poc/plugin-a"
 	"github.com/slaveofcode/golang-monorepo-poc/plugin-b"
 	"github.com/slaveofcode/golang-monorepo-poc/plugin-c"
@@ -95,9 +96,9 @@ func main() {
 	}
 
 	// plugin-c is using newest core/v2
-	registryV2 := map[string[corev2.Plugin]{
+	registryV2 := map[string]corev2.Plugin{
 		"plugin-c": &pluginc.PluginC{},
-	}}
+	}
 
 	ctxV2 := corev2.NewContext(registryV2)
 	if err := registryV2["plugin-c"].Init(ctxV2); err != nil {
