@@ -53,7 +53,7 @@ func main() {
 
 ## Next: For Example I Added Core V2 with Breaking Changes
 
-A breaking changes for core plugin is added, the old codebase that refers to plugin-a, plugin-b and core v1 should not broken. plugin-c is added to use the core v2 as an implementation, so core now should support bot v1 & v2 codebase.
+A breaking changes for core plugin is added, the old codebase that refers to plugin-a, plugin-b and core v1 should not be broken. plugin-c is added to use the core v2 as an implementation, so core now should support both v1 & v2 codebase.
 
 Tag the core v2 & plugin c, make sure no changes in core v1, plugin-a & plugin-b. If anything changes on them, we should tag them too to maintain consistency.
 ```
