@@ -56,7 +56,7 @@ A breaking changes for core plugin is added, the old codebase that refers to plu
 
 Tag the core v2 & plugin c, make sure no changes in core v1, plugin-a & plugin-b. If anything changes on them, we should tag them too to maintain consistency.
 ```
-git tag core/v2.0.0
+git tag core/v2/v2.0.0
 git tag plugin-c/v1.0.0
 ```
 
